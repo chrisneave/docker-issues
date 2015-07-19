@@ -154,6 +154,7 @@ Windows and Mac machines I use the following snippet to detect whether the
 extra forward slash is required:
 
 ```bash
+OS=$(uname)
 if [[ $OS == MINGW* ]]; then
   # Using msysgit
   # -v /$(pwd)
